@@ -3,7 +3,7 @@
 import { createSlice, PayloadAction, Dispatch } from "@reduxjs/toolkit";
 import axios from "axios";
 
-import texture1 from "assets/0-4k.svg";
+
 //create mock data for prices
 const pricesMock = [
   {
