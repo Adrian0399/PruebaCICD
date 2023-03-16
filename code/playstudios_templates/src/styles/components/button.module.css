@@ -1,0 +1,263 @@
+.button {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-sizing: border-box;
+  height: 48px;
+  padding: 13px 27px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* PRIMARY BUTTON */
+.button__primary {
+  --shadow-btn: 0px 0px 25.2px rgba(64, 64, 64, 0.14);
+
+  background: var(--bg-button-primary);
+  box-shadow: var(--shadow-btn);
+  color: var(--white);
+  transition: filter 0.15s ease-in-out;
+}
+
+.button__primary:active {
+  background: var(--bg-button-primary-active);
+}
+
+.button__primary:disabled {
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+/* SECONDARY BUTTON */
+.button__secondary {
+  --bg-color-button-secondary: var(--white);
+  --bg-color-button-secondary-active: var(--info);
+
+  background: var(--bg-color-button-secondary);
+  box-shadow: var(--shadow-btn);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  transition: filter 0.15s ease-in-out;
+}
+
+.button__secondary:active {
+  background-color: var(--bg-color-button-secondary-active);
+}
+
+.button__secondary:disabled {
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+/* OUTLINE BUTTON */
+.button__outline {
+  --bg-color-button-outline: var(--white);
+  --bg-color-button-outline-active: var(--optional-5);
+
+  background-color: var(--bg-color-button-outline);
+  box-shadow: var(--shadow-btn);
+  color: var(--tertiary);
+  border: 1px solid var(--tertiary);
+  transition: filter 0.15s ease-in-out;
+}
+
+.button__outline:active {
+  background-color: var(--bg-color-button-outline-active);
+}
+
+.button__outline:disabled {
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+/* DANGER BUTTON */
+.button__danger {
+  --shadow-btn: 0px 0px 25.2px rgba(64, 64, 64, 0.14);
+
+  background: var(--bg-button-error);
+  box-shadow: var(--shadow-btn);
+  color: var(--white);
+  transition: filter 0.15s ease-in-out;
+}
+
+.button__danger:active {
+  background: var(--bg-button-error-active);
+}
+
+.button__danger:disabled {
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+/* SOCIAL NETWORKS BUTTONS */
+.button__networks {
+  --shadow-btn-networks: 0px 4px 25.2px rgba(64, 64, 64, 0.14);
+  box-shadow: var(--shadow-btn-networks);
+  color: var(--white);
+  gap: 12px;
+}
+
+.button__networks:disabled {
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+.button__icon--1 {
+  width: auto;
+  height: 20px;
+}
+
+.button__icon--2 {
+  width: 20px;
+  height: auto;
+}
+
+.button__icon--3 {
+  width: 20px;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.button__icon--4 {
+  width: 5px;
+  height: 10px;
+}
+
+.button__networks--apple {
+  --bg-apple: var(--black);
+  background: var(--bg-apple);
+}
+
+.button__networks--facebook {
+  --bg-facebook: linear-gradient(90deg, #2a4680 0%, #4370cd 100%);
+  background: var(--bg-facebook);
+}
+
+/* INFORMATION BUTTONS */
+.button__information {
+  --bg-color-button-info: var(--info);
+  --bg-color-button-info-active: var(--optional-6);
+
+  background-color: var(--bg-color-button-info);
+  color: var(--secondary);
+  font-weight: 500;
+  width: 324px;
+  height: 34px;
+  gap: 9px;
+  padding: 0 12px;
+  justify-content: flex-start;
+  font-size: 14px;
+  transition: filter 0.15s ease-in-out;
+}
+
+.button__information:active {
+  background-color: var(--bg-color-button-info-active);
+}
+
+.button__information:disabled {
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+.button__information-more {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: right;
+  flex: 1;
+}
+
+/* REWARD DETAILS BUTTON */
+.button__trigger {
+  --bg-color-button-trigger: var(--white);
+  --bg-color-button-trigger-active: var(--optional-5);
+
+  width: 324px;
+  height: 50px;
+  padding: 16px 7px 16px 0;
+  box-sizing: border-box;
+  background-color: var(--bg-color-button-trigger);
+  border-top: 1px solid var(--divider);
+  border-bottom: 1px solid var(--divider);
+  border-radius: 0;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--tertiary);
+  display: flex;
+  justify-content: space-between;
+  transition: filter 0.15s ease-in-out;
+}
+
+.button__trigger:active {
+  background-color: var(--bg-color-button-trigger-active);
+}
+
+.button__trigger:disabled {
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+.trigger-button-collection > * {
+  border-bottom: 0;
+}
+
+.trigger-button-collection .button__trigger:last-child {
+  border-bottom: 1px solid var(--divider);
+}
+
+/* BUTTON SIZES  */
+.button--small {
+  height: 40px;
+}
+.button--large {
+  width: 324px;
+}
+.button--full {
+  width: 100%;
+}
+
+/* FORM BUTTONS */
+.form-button {
+  --bg-color-button-form: var(--tertiary);
+  --bg-color-button-form-active: #de851d;
+
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  box-sizing: border-box;
+  height: auto;
+  padding: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+  color: var(--bg-color-button-form);
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.form-button__icon {
+  height: 11px;
+}
+
+.form-button:active {
+  color: var(--bg-color-button-form-active);
+}
+
+.form-button:disabled {
+  filter: opacity(50%);
+  cursor: not-allowed;
+}

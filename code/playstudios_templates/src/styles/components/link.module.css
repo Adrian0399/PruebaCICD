@@ -1,0 +1,36 @@
+.link-back {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--secondary);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link-back__group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.link-back__arrow {
+  --bg-btn: var(--bg-button-primary);
+  --shadow-icon-btn: 0px 0px 6px rgba(64, 64, 64, 0.25);
+
+  background: var(--bg-btn);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-icon-btn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-back__arrow-icon {
+  width: 6px;
+  height: 8px;
+  margin: 0;
+}

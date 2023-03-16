@@ -1,0 +1,81 @@
+.price-tag,
+.price-tag--2,
+.price-tag--3 {
+  display: inline-block;
+}
+
+.price-tag__container {
+  width: 100%;
+  height: auto;
+  padding: 2.5px 9px;
+  box-sizing: border-box;
+  background-color: rgba(var(--white-rgb), 0.85);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.price-tag__icon {
+  width: 15px;
+  height: 15px;
+}
+
+.price-tag__text {
+  font-family: var(--font-main);
+  color: var(--primary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  margin: 0;
+}
+
+/* Price Tag variation 2 */
+.price-tag--2 .price-tag__container {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.price-tag--2 .price-tag__icon {
+  width: 12px;
+  height: 12px;
+}
+
+.price-tag--2 .price-tag__text {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+  word-break: break-all;
+}
+
+/* Price Tag variation 3 */
+.price-tag--3 .price-tag__container {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.price-tag--3 .price-tag__icon {
+  width: 17px;
+  height: 17px;
+}
+
+.price-tag--3 .price-tag__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}

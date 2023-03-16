@@ -1,0 +1,229 @@
+/* ===============================
+THIS STYLES ARE ONLY FOR THE UI KIT DOCUMENTATION
+================================== */
+
+body {
+  display: block;
+  position: relative;
+  background: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sidebar {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  width: 280px;
+  /* min-width: 280px; */
+  background: #2c1049;
+  background: linear-gradient(to left #2c1049 50%, #3e2f65 50%);
+  max-height: 100vh;
+  overflow-y: scroll;
+  position: sticky;
+  left: 0;
+  top: 0;
+  font-weight: 300;
+}
+
+.sidebar_logo {
+  padding: 60px 24px;
+  font-size: 24px;
+  text-align: center;
+  background: #2c1049;
+  border-bottom: 2px solid #3e2f6590;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-sizing: border-box;
+}
+.sidebar_logo a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+.sidebar_logo img {
+  width: 60px;
+  height: auto;
+}
+
+.sidebar ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.sidebar_items {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #2c1049;
+  height: 100vh;
+}
+
+.sidebar_items_list {
+  padding: 0 18px;
+  display: flex;
+}
+.sidebar_items_list:hover {
+  background: #b7a3ec90;
+  border-left: 5px solid #ff8200;
+  cursor: pointer;
+  transition: background 0.2s ease, border 0.1s ease-in-out;
+}
+
+.sidebar_items_list_info {
+  color: #efefef50;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sidebar-toggle {
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  background: #613fb8;
+  cursor: pointer;
+  color: #fff;
+  position: sticky;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+.sidebar-toggle p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/*****Active ***/
+
+.sidebar.active {
+  display: inline-block;
+  width: 80px;
+  background: transparent;
+  height: 100vh;
+}
+
+.sidebar.active .sidebar_logo {
+  padding: 8px;
+  border-bottom: 2px solid #3e2f6590;
+}
+.sidebar.active .sidebar_logo a {
+  display: none;
+}
+.sidebar.active .sidebar_logo img {
+  width: 48px;
+  height: 48px;
+  padding: 0px;
+  display: block;
+}
+
+.sidebar.active .sidebar_items .sidebar_items_list p {
+  display: none;
+}
+
+.sidebar.active .sidebar-toggle p {
+  display: none;
+}
+
+.sidebar.active .sidebar_items_list_info {
+  display: none;
+}
+
+/***Scrollbar **/
+/* ::-webkit-scrollbar {
+  width: 8px;
+} */
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background: #efeafc;
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: #613fb8;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #3e2f65;
+} */
+
+.main {
+  padding: 40px;
+  width: 1024px;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  display: block;
+  flex: 1;
+}
+
+.ui__typography {
+  padding: 0;
+}
+.ui__typography li {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+.ui__typography li span {
+  margin-right: 10px;
+  color: #a8a8a8;
+  font-size: 12px;
+}
+
+.ui__typography li h1,
+.ui__typography li h2,
+.ui__typography li h3,
+.ui__typography li h4,
+.ui__typography li h5,
+.ui__typography li h6 {
+  display: inline;
+}
+
+.hero {
+  background-color: #f6f6fb;
+  padding: 1.5em 2em;
+}
+
+.hidden-modal {
+  display: none !important;
+}
+
+.dummy__size--mobile {
+  width: 100%;
+  height: 400px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px dashed #ffa133;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.highlighted {
+  color: #ffa133;
+}
+
+/* TODO: Implement Grid Layout for responsive design en la UI del UI Kit*/

@@ -1,0 +1,9 @@
+.tier-level {
+  display: flex;
+  align-items: center;
+}
+
+.tier-level__image {
+  width: auto;
+  height: 30px;
+}

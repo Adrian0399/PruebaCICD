@@ -1,0 +1,327 @@
+:root {
+  --card-small-w: 110px;
+  --card-small-h: 160px;
+
+  --card-small-border-radius: 6px;
+
+  --card-small-shadow: 0px 0px 8px rgba(89, 89, 89, 0.45);
+  --card-small-shadow-inset: inset 0px 0px 3px rgba(0, 0, 0, 0.2);
+
+  --card-small-content-w: inherit;
+  --card-small-content-h: 53px;
+  --card-small-content-medium-h: 68px;
+  --card-small-content-large-h: 77px;
+  --card-small-content-coins-h: 39px;
+
+  --card-small-image-w: 100%;
+  --card-small-image-h: auto;
+  --card-small-image-maxw: 100%;
+  --card-small-image-maxh: 100%;
+
+  /* Cards to List */
+  --card-list-w: 88px;
+  --card-list-h: 113px;
+  --card-list-border-radius: 3px;
+  --card-list-shadow: 0px 0px 8px rgba(89, 89, 89, 0.45);
+}
+
+.card {
+  width: var(--card-small-w);
+  height: var(--card-small-h);
+  background-color: var(--white);
+  overflow: hidden;
+  position: relative;
+  border-radius: var(--card-small-border-radius);
+  box-shadow: var(--card-small-shadow);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.card__image {
+  width: var(--card-small-image-w);
+  height: var(--card-small-image-h);
+  max-width: var(--card-small-image-maxw);
+  max-height: var(--card-small-image-maxh);
+  object-fit: cover;
+  grid-column: 1;
+  grid-row: 1/2;
+  overflow: hidden;
+}
+
+.card__content {
+  width: var(--card-small-content-w);
+  height: auto;
+  min-height: var(--card-small-content-h);
+  box-shadow: var(--card-small-shadow-inset);
+  box-sizing: border-box;
+  padding: 8px;
+  grid-column: 1;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.card__description {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  color: var(--secondary);
+  margin: 0;
+}
+
+.card__content--center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card__content--left {
+  text-align: left;
+  justify-content: center;
+  align-items: start;
+}
+
+/* MEDIUM SIZE CARD */
+.card__content--medium > .card__content {
+  min-height: var(--card-small-content-medium-h);
+}
+
+.card__content--medium > .card__content > .card__description {
+  font-size: 9px;
+  line-height: 14px;
+}
+
+/* LARGE SIZE CARD */
+.card__content--large > .card__content {
+  min-height: var(--card-small-content-large-h);
+}
+
+.card__content--large > .card__content > .card__title {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 700;
+}
+
+.card__content--large > .card__content > .price-tag--2 {
+  margin-top: 5px;
+}
+
+/* PRICE CARD */
+.card__coins > .card__image-coins {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  object-fit: scale-down;
+  display: block;
+  z-index: 2;
+}
+
+.card__coins > .card__content {
+  --content-gradient-1: #d3d3ec;
+  --content-gradient-2: #898aca;
+  --bg-content: linear-gradient(
+    90deg,
+    var(--content-gradient-1) 7.29%,
+    var(--content-gradient-2) 86.98%
+  );
+
+  min-height: var(--card-small-content-coins-h);
+  background: var(--bg-content);
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.card__coins > .card__content > .card__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+/* CARD with RIBBON(EXPIRATION BAND) */
+.card__container {
+  position: relative;
+  width: var(--card-small-w);
+  height: var(--card-small-h);
+}
+
+.card__container .expiration-band__legend {
+  /* Was modified the width and the padding to asjut to the card of list */
+  --triangle-size: 3px;
+  --band-w: 55px;
+
+  width: var(--band-w);
+  min-width: var(--band-w);
+  padding: 5px 15px calc(var(--triangle-size) + 5px);
+}
+
+/* ===========================================
+=================== CARD LIST ================
+============================================== */
+:root {
+  --card-list-w: 88px;
+  --card-list-h: 113px;
+  --card-list-border-radius: 3px;
+  --card-list-shadow: 0px 0px 8px rgba(89, 89, 89, 0.45);
+
+  --card-list-image-w: 100%;
+  --card-list-image-h: 100%;
+  --card-list-image-maxw: 100%;
+  --card-list-image-maxh: 100%;
+}
+
+.card-list {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: var(--card-list-w) auto;
+  grid-template-rows: 1fr;
+  gap: 18px;
+}
+
+.card-list__container-image {
+  position: relative;
+  width: var(--card-list-w);
+  height: var(--card-list-h);
+  background-color: var(--divider);
+  border-radius: var(--card-list-border-radius);
+  box-shadow: var(--card-list-shadow);
+
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.card-list__image {
+  width: var(--card-list-image-w);
+  height: var(--card-list-image-h);
+  max-width: var(--card-list-image-maxw);
+  max-height: var(--card-list-image-maxh);
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: var(--card-list-border-radius);
+}
+
+.card-list__content {
+  grid-column: 2/3;
+  grid-row: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-list__title {
+  margin: 0;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--primary);
+}
+
+.card-list__subtitle {
+  margin: 0;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--secondary);
+}
+
+.card-list__status {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-list__icon {
+  width: auto;
+  height: 12px;
+}
+
+.card-list__text {
+  margin: 0;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 14px;
+  color: var(--primary);
+}
+
+/* CARD LIST IMAGE with RIBBON(EXPIRATION BAND) */
+.card-list__container-image .expiration-band__legend {
+  /* Was modified the width and the padding to asjut to the card of list */
+  --triangle-size: 3px;
+  --band-w: 55px;
+
+  width: var(--band-w);
+  min-width: var(--band-w);
+  padding: 5px 15px calc(var(--triangle-size) + 5px);
+}
+
+/* ===========================================
+=====Image Card Featured Detail & Ribbon======
+============================================== */
+.picture-featured {
+  --card-picture-featured-width: 260px;
+  --card-picture-featured-height: 160px;
+
+  --card-picture-featured-image-w: 100%;
+  --card-picture-featured-image-h: 100%;
+  --card-picture-featured-image-maxw: 100%;
+  --card-picture-featured-image-maxh: 100%;
+  --card-picture-featured-border-radius: 6px;
+  --card-picture-featured-shadow: 0px 0px 8px rgba(89, 89, 89, 0.45);
+
+  position: relative;
+  width: var(--card-picture-featured-width);
+  height: var(--card-picture-featured-height);
+  
+}
+
+.picture-featured--full{
+  --card-picture-featured-width: 100%;
+  --card-picture-featured-height: 100%;
+}
+
+.picture-featured__box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(var(--optional-4) 0 0) padding-box,
+    var(--bg-button-primary) border-box;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  box-shadow: var(--card-picture-featured-shadow);
+  display: inline-block;
+  overflow: hidden;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.picture-featured__image {
+  width: var(--card-picture-featured-image-w);
+  height: var(--card-picture-featured-image-h);
+  max-width: var(--card-picture-featured-image-maxw);
+  max-height: var(--card-picture-featured-image-maxh);
+  object-fit: cover;
+  overflow: hidden;
+}

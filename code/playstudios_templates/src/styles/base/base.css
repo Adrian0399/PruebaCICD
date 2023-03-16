@@ -1,0 +1,11 @@
+@import "./variables.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: var(--font-main);
+  color: var(--main);
+}

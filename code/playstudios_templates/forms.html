@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./images/logo_playstudios.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website is only for documentation for playstudios webview"
+    />
+    <title>UI KIT - Playstudios</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!---sidebar-->
+      <div class="sidebar">
+        <div class="sidebar_logo">
+          <img src="./images/logo-playstudios.svg" alt="Playstudios" />
+          <a href="#"> Playstudios</a>
+        </div>
+        <ul class="sidebar_items">
+          <li class="sidebar_items_list">
+            <a href="./index.html" class="sidebar_nav_item">
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="sidebar_items_list_info">
+            <span>components</span>
+          </li>
+          <li class="sidebar_items_list">
+            <a href="./typography.html" class="sidebar_nav_item">
+              <p>Typography</p>
+            </a>
+          </li>
+          <li class="sidebar_items_list">
+            <a href="./buttons.html" class="sidebar_nav_item">
+              <p>Buttons & Links</p>
+            </a>
+          </li>
+          <li class="sidebar_items_list">
+            <a href="./cards.html" class="sidebar_nav_item">
+              <p>Cards</p>
+            </a>
+          </li>
+          <li class="sidebar_items_list">
+            <a href="./forms.html" class="sidebar_nav_item">
+              <p>Forms</p>
+            </a>
+          </li>
+          <li class="sidebar_items_list">
+            <a href="./layouts.html" class="sidebar_nav_item">
+              <p>layouts</p>
+            </a>
+          </li>
+          <li class="sidebar_items_list_info">
+            <span>modals</span>
+          </li>
+          <li class="sidebar_items_list">
+            <a href="./modal.html" class="sidebar_nav_item">
+              <p>modal 1</p>
+            </a>
+          </li>
+          <li class="sidebar_items_list">
+            <a href="./modal2.html" class="sidebar_nav_item">
+              <p>modal 2</p>
+            </a>
+          </li>
+          <li class="sidebar_items_list">
+            <a href="./modal-form.html" class="sidebar_nav_item">
+              <p>modal form</p>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-toggle">
+          <p>Hide Sidebar</p>
+        </div>
+      </div>
+      <!---container-->
+      <div class="main">
+        <main class="container">
+          <h3>Container Form</h3>
+          <!-- START Container Form-->
+          <div class="form__content">
+            <div class="form__header">
+              <h2 class="form__header-title">Sign In</h2>
+            </div>
+            <div class="form__body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Inventore quam sapiente, consequuntur qui perferendis alias
+                deleniti obcaecati. Saepe, asperiores commodi fuga voluptates,
+                nobis distinctio deserunt ducimus accusantium expedita, ea sed!
+              </p>
+            </div>
+          </div>
+          <!-- END Container Form-->
+          <hr />
+          <h3>Checkbox</h3>
+          <label for="dummycheck1">Unchecked</label>
+          <input id="dummycheck1" name="lorem" type="checkbox" />
+          <label for="dummycheck2">Checked</label>
+          <input id="dummycheck2" name="lorem" type="checkbox" checked />
+          <br />
+          <hr />
+          <h3>Tabs</h3>
+          <!-- START tabs section -->
+          <div class="tab">
+            <ul>
+              <li class="tab__item">Lorem</li>
+              <li class="tab__item tab__item--active">Available (0)</li>
+              <li class="tab__item">History (0)</li>
+            </ul>
+          </div>
+          <!-- END tabs section -->
+          <!-- START panel section -->
+          <div class="panel">
+            <div class="panel__item">
+              <img
+                src="./images/bg-dummy-3.png"
+                alt="image dummy"
+                width="300px"
+              />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="panel__item panel__item--active">
+              <!-- The class "dummy__size--mobile", it is just to exemplify a mobile size -->
+              <div class="dummy__size--mobile">
+                <!-- START available default message -->
+                <div class="wallet__content">
+                  <img
+                    class="wallet__container-image"
+                    src="./images/icon-wallet-vip.svg"
+                    alt="image dummy"
+                  />
+                  <p class="wallet__default-message">
+                    Your wallet is currently
+                    <span class="wallet__default-highlight">empty.</span>
+                  </p>
+                  <p class="wallet__default-recomendation">
+                    Use Reward Points to redeemreal Rewards!
+                  </p>
+                </div>
+                <!-- END available default message -->
+              </div>
+            </div>
+            <div class="panel__item">
+              <!-- The class "dummy__size--mobile", it is just to exemplify a mobile size -->
+              <div class="dummy__size--mobile">
+                <!-- START history default message -->
+                <div class="wallet__content">
+                  <img
+                    class="wallet__container-image"
+                    src="./images/icon-wallet-vip.svg"
+                    alt="image dummy"
+                  />
+                  <p class="wallet__default-message">
+                    NO REWARDS
+                    <span class="wallet__default-highlight">empty.</span>
+                  </p>
+                  <p class="wallet__default-recomendation">
+                    You have no rewards in your history yet. Used or expired
+                    rewards will appear here.
+                  </p>
+                </div>
+                <!-- END history default message -->
+              </div>
+            </div>
+          </div>
+          <!-- END panel section -->
+          <br />
+          <hr />
+          <!-- START VARIANT 1 -->
+          <h3>From group - <span class="highlighted">Variant 1</span></h3>
+          <h4>Label & Input</h4>
+          <form class="form">
+            <div class="form__group">
+              <div class="label__group">
+                <img
+                  class="label__icon"
+                  src="./images/icon-person.svg"
+                  alt="name icon"
+                />
+                <label class="form__label" for="dummy1"> Name </label>
+              </div>
+              <div class="form__control">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  id="dummy1"
+                  placeholder="name"
+                />
+              </div>
+            </div>
+          </form>
+          <h4>Multiple Input</h4>
+          <form class="form">
+            <div class="form__group">
+              <div class="label__group">
+                <img
+                  class="label__icon"
+                  src="./images/icon-person.svg"
+                  alt="name icon"
+                />
+                <label class="form__label" for="dummy2"> Name </label>
+              </div>
+              <div class="form__control">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="firstname"
+                  id="dummy2"
+                  placeholder="name"
+                />
+                <input
+                  class="form__input"
+                  type="text"
+                  name="firstname"
+                  id="dummy2_1"
+                  placeholder="first name"
+                />
+              </div>
+            </div>
+          </form>
+          <br />
+          <hr />
+          <h4>Select</h4>
+          <form class="form">
+            <div class="form__group">
+              <div class="label__group">
+                <img
+                  class="label__icon"
+                  src="./images/icon-person.svg"
+                  alt="name icon"
+                />
+                <label class="form__label" for="dummyselect1"> Name </label>
+              </div>
+              <div class="form__control">
+                <div class="select__group">
+                  <div class="select__icon">
+                    <img
+                      src="./images/icon-caret-down.svg"
+                      alt="select dummy"
+                    />
+                  </div>
+                  <select class="form__select" id="dummyselect1">
+                    <option value="" disabled selected hidden>
+                      Choose a option
+                    </option>
+                    <option>
+                      option 1 Lorem ipsum dolor sit amet consectetur.
+                    </option>
+                    <option>option 2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+          <h4>Select Error</h4>
+          <form class="form">
+            <div class="form__group">
+              <div class="label__group">
+                <img
+                  class="label__icon"
+                  src="./images/icon-person.svg"
+                  alt="name icon"
+                />
+                <label class="form__label" for="dummyselect2"> Name </label>
+              </div>
+              <div class="form__control">
+                <div class="select__group">
+                  <div class="select__icon">
+                    <img
+                      src="./images/icon-caret-down.svg"
+                      alt="select dummy"
+                    />
+                  </div>
+                  <select
+                    class="form__select form__select--error"
+                    id="dummyselect2"
+                  >
+                    <option value="" disabled selected hidden>
+                      Choose a option
+                    </option>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+          <br />
+          <hr />
+          <h3>States</h3>
+          <h4>Default</h4>
+          <form class="form">
+            <div class="form__group">
+              <div class="label__group">
+                <img
+                  class="label__icon"
+                  src="./images/icon-person.svg"
+                  alt="name icon"
+                />
+                <label class="form__label" for="dummy3"> Name </label>
+              </div>
+              <div class="form__control">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  id="dummy3"
+                  placeholder="name"
+                />
+              </div>
+            </div>
+          </form>
+          <h4>Focus</h4>
+          <p>
+            <small>Select any entry to see the border with focus.</small>
+          </p>
+          <h4>Error</h4>
+          <form class="form">
+            <div class="form__group">
+              <div class="label__group">
+                <img
+                  class="label__icon"
+                  src="./images/icon-person.svg"
+                  alt="name icon"
+                />
+                <label class="form__label" for="dummy5"> email </label>
+              </div>
+              <div class="form__control">
+                <input
+                  class="form__input form__input--error"
+                  type="email"
+                  value="supportEmail"
+                  name="email"
+                  id="dummy5"
+                  placeholder="email"
+                />
+              </div>
+            </div>
+          </form>
+          <br />
+          <hr />
+          <h4>Multiple Input Lines</h4>
+          <form class="form">
+            <div class="form__group">
+              <div class="label__group">
+                <img
+                  class="label__icon"
+                  src="./images/icon-location.svg"
+                  alt="name icon"
+                />
+                <label class="form__label" for="dummymultiple1">
+                  Location
+                </label>
+              </div>
+              <div class="form__control">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  id="dummymultiple1"
+                  placeholder="name"
+                />
+              </div>
+              <div class="form__control">
+                <input
+                  class="form__input"
+                  type="tel"
+                  name="name"
+                  id="dummymultiple2"
+                  placeholder="name"
+                />
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  id="dummymultiple3"
+                  placeholder="name"
+                />
+                <input
+                  class="form__input"
+                  type="number"
+                  name="zipcode"
+                  id="dummymultiple4"
+                  placeholder="zip code"
+                />
+              </div>
+              <div class="form__control">
+                <input
+                  class="form__input"
+                  type="email"
+                  name="name"
+                  id="dummymultiple5"
+                  placeholder="name"
+                />
+                <select
+                  class="form__select form__select--error"
+                  id="dummyselect2"
+                >
+                  <option>option 1</option>
+                  <option>option 1</option>
+                  <option>option 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="label__group">
+                <img
+                  class="label__icon"
+                  src="./images/icon-person.svg"
+                  alt="name icon"
+                />
+                <label class="form__label" for="dummy50"> Name </label>
+              </div>
+              <div class="form__control">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  id="dummy50"
+                  placeholder="name"
+                />
+              </div>
+            </div>
+          </form>
+          <br />
+          <hr />
+          <h3>Field - <span class="highlighted">Variant 1</span></h3>
+          <div class="field">
+            <div class="field__heading">
+              <img
+                class="field__icon"
+                src="./images/icon-email.svg"
+                alt="name field"
+              />
+              <p class="field__title">Email</p>
+            </div>
+            <p class="filed__description">email@email.com</p>
+          </div>
+          <h4>Field collection</h4>
+          <div class="field__collection">
+            <div class="field">
+              <div class="field__heading">
+                <img
+                  class="field__icon"
+                  src="./images/icon-person.svg"
+                  alt="name field"
+                />
+                <p class="field__title">name</p>
+              </div>
+              <p class="filed__description">Johathan Davis</p>
+            </div>
+            <div class="field">
+              <div class="field__heading">
+                <img
+                  class="field__icon"
+                  src="./images/icon-phone.svg"
+                  alt="name field"
+                />
+                <p class="field__title">phone</p>
+              </div>
+              <p class="filed__description">+1 541 675 3928</p>
+            </div>
+            <div class="field">
+              <div class="field__heading">
+                <img
+                  class="field__icon"
+                  src="./images/icon-location.svg"
+                  alt="name field"
+                />
+                <p class="field__title">location</p>
+              </div>
+              <p class="filed__description">
+                2431 President Rd, Las Vegas NV, 88901 US
+              </p>
+            </div>
+          </div>
+          <br />
+          <hr />
+          <!-- END VARIANT 1 -->
+          <!-- START VARIANT 2 -->
+          <h3>Form group - <span class="highlighted">Variant 2</span></h3>
+          <div class="hero">
+            <h4>Label & Input</h4>
+            <form class="form--2">
+              <div class="form__group--2">
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummy11"> Name </label>
+                  <input
+                    class="form__input--2"
+                    type="text"
+                    name="name"
+                    id="dummy11"
+                    placeholder="name"
+                  />
+                </div>
+              </div>
+            </form>
+            <h4>Multiple Input</h4>
+            <form class="form--2">
+              <div class="form__group--2">
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummy12"> Name </label>
+                  <input
+                    class="form__input--2"
+                    type="text"
+                    name="name"
+                    id="dummy12"
+                  />
+                </div>
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummy13">
+                    Last name
+                  </label>
+                  <input
+                    class="form__input--2"
+                    type="text"
+                    name="name"
+                    id="dummy13"
+                  />
+                </div>
+              </div>
+            </form>
+            <br />
+            <hr />
+            <h4>Multiple Input Lines</h4>
+            <form class="form--2">
+              <div class="form__group--2">
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummy22"> Name </label>
+                  <input
+                    class="form__input--2"
+                    type="text"
+                    name="name"
+                    id="dummy22"
+                    placeholder="name"
+                  />
+                </div>
+              </div>
+              <div class="form__group--2">
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummy23"> Name </label>
+                  <input
+                    class="form__input--2"
+                    type="text"
+                    name="name"
+                    id="dummy23"
+                    placeholder="name"
+                  />
+                </div>
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummyselect410"
+                    >email</label
+                  >
+                  <div class="select__group">
+                    <div class="select__icon--2">
+                      <img
+                        src="./images/icon-arrow-down.svg"
+                        alt="select dummy"
+                      />
+                    </div>
+                    <select class="form__select--2" id="dummyselect410">
+                      <option value="" disabled selected hidden>
+                        Choose a option
+                      </option>
+                      <option>
+                        option 1 Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Consectetur, laborum.
+                      </option>
+                      <option>option 2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form__group--2">
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummy25"> Name </label>
+                  <input
+                    class="form__input--2"
+                    type="text"
+                    name="name"
+                    id="dummy25"
+                    placeholder="name"
+                  />
+                </div>
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummy26"> Name </label>
+                  <input
+                    class="form__input--2"
+                    type="text"
+                    name="name"
+                    id="dummy26"
+                    placeholder="name"
+                  />
+                </div>
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummy27"> Name </label>
+                  <input
+                    class="form__input--2"
+                    type="text"
+                    name="name"
+                    id="dummy27"
+                    placeholder="name"
+                  />
+                </div>
+              </div>
+            </form>
+            <hr />
+
+            <h3>States</h3>
+            <h4>Default</h4>
+            <form class="form--2">
+              <div class="form__group--2">
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummy30">email</label>
+                  <input
+                    class="form__input--2"
+                    type="text"
+                    name="email"
+                    id="dummy30"
+                  />
+                </div>
+              </div>
+            </form>
+            <h4>Focus</h4>
+            <p>
+              <small>Select any entry to see the border with focus.</small>
+            </p>
+            <h4>Error</h4>
+            <form class="form--2">
+              <div class="form__group--2">
+                <div class="form__control--2">
+                  <label
+                    class="form__label--2 form__label--2-error"
+                    for="dummy30"
+                    >email</label
+                  >
+                  <input
+                    class="form__input--2 form__input--2-error"
+                    type="email"
+                    value="supportEmail"
+                    name="email"
+                    id="dummy30"
+                  />
+                </div>
+              </div>
+            </form>
+            <br />
+            <hr />
+            <h4>Select</h4>
+            <form class="form--2">
+              <div class="form__group--2">
+                <div class="form__control--2">
+                  <label class="form__label--2" for="dummyselect41"
+                    >email</label
+                  >
+                  <div class="select__group">
+                    <div class="select__icon--2">
+                      <img
+                        src="./images/icon-arrow-down.svg"
+                        alt="select dummy"
+                      />
+                    </div>
+                    <select class="form__select--2" id="dummyselect41">
+                      <option value="" disabled selected hidden>
+                        Choose a drink
+                      </option>
+                      <option>option 1</option>
+                      <option>option 2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <h4>Select Error</h4>
+            <form class="form--2">
+              <div class="form__group--2">
+                <div class="form__control--2">
+                  <label
+                    class="form__label--2 form__label--2-error"
+                    for="dummyselect41"
+                    >email</label
+                  >
+                  <div class="select__group">
+                    <div class="select__icon--2">
+                      <img
+                        src="./images/icon-arrow-down.svg"
+                        alt="select dummy"
+                      />
+                    </div>
+                    <select
+                      class="form__select--2 form__select--2-error"
+                      id="dummyselect41"
+                    >
+                      <option value="" disabled selected hidden>
+                        Choose a option
+                      </option>
+                      <option>
+                        option 1 Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Consectetur, laborum.
+                      </option>
+                      <option>option 2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <br />
+            <hr />
+          </div>
+          <br />
+          <hr />
+          <h3>Field - <span class="highlighted">Variant 2</span></h3>
+          <div class="field field--2">
+            <div class="field__heading field__heading--2">
+              <p class="field__title field__title--2">Email</p>
+            </div>
+            <p class="filed__description filed__description--2">
+              email@email.com
+            </p>
+          </div>
+          <h4>Field collection</h4>
+          <div class="field__collection">
+            <div class="field field--2">
+              <div class="field__heading field__heading--2">
+                <p class="field__title field__title--2">name</p>
+              </div>
+              <p class="filed__description filed__description--2">
+                Johathan Davis
+              </p>
+            </div>
+            <div class="field field--2">
+              <div class="field__heading field__heading--2">
+                <p class="field__title field__title--2">phone</p>
+              </div>
+              <p class="filed__description filed__description--2">
+                +1 541 675 3928
+              </p>
+            </div>
+            <div class="field field--2">
+              <div class="field__heading field__heading--2">
+                <p class="field__title field__title--2">location</p>
+              </div>
+              <p class="filed__description filed__description--2">
+                2431 President Rd, Las Vegas NV, 88901 US
+              </p>
+            </div>
+          </div>
+          <!-- END VARIANT 2 -->
+          <hr />
+          <!-- START VARIANT 3 -->
+          <h3>Form group - <span class="highlighted">Variant 3</span></h3>
+          <h4>Label & Input</h4>
+          <form class="form--3">
+            <div class="form__group--3">
+              <div class="form__control--3">
+                <input
+                  class="form__input--3"
+                  type="text"
+                  name="name"
+                  id="dummy50"
+                  placeholder="name"
+                />
+              </div>
+            </div>
+          </form>
+          <h4>Multiple Input</h4>
+          <form class="form--3">
+            <div class="form__group--3">
+              <div class="form__control--3">
+                <input
+                  class="form__input--3"
+                  type="text"
+                  name="name"
+                  id="dummy50"
+                  placeholder="name"
+                />
+                <input
+                  class="form__input--3"
+                  type="text"
+                  name="name"
+                  id="dummy51"
+                  placeholder="city"
+                />
+              </div>
+            </div>
+          </form>
+          <h4>Multiple Input Lines</h4>
+          <form class="form--3">
+            <div class="form__group--3">
+              <div class="form__control--3">
+                <input
+                  class="form__input--3"
+                  type="text"
+                  name="name"
+                  id="dummy53"
+                  placeholder="street"
+                />
+              </div>
+            </div>
+            <div class="form__group--3">
+              <div class="form__control--3">
+                <input
+                  class="form__input--3"
+                  type="text"
+                  name="name"
+                  id="dummy54"
+                  placeholder="name"
+                />
+                <input
+                  class="form__input--3"
+                  type="text"
+                  name="name"
+                  id="dummy55"
+                  placeholder="last name"
+                />
+              </div>
+            </div>
+            <div class="form__group--3">
+              <div class="form__control--3">
+                <input
+                  class="form__input--3"
+                  type="text"
+                  name="name"
+                  id="dummy55"
+                  placeholder="name"
+                />
+                <div class="select__group">
+                  <div class="select__icon--3">
+                    <img
+                      src="./images/icon-arrow-down.svg"
+                      alt="select dummy"
+                    />
+                  </div>
+                  <select class="form__select--3" id="dummyselect41">
+                    <option value="" disabled selected hidden>
+                      Choose a option
+                    </option>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                  </select>
+                </div>
+                <input
+                  class="form__input--3"
+                  type="text"
+                  name="name"
+                  id="dummy57"
+                  placeholder="email"
+                />
+              </div>
+            </div>
+          </form>
+          <hr />
+          <h3>States</h3>
+          <h4>Default</h4>
+          <form class="form--3">
+            <div class="form__group--3">
+              <div class="form__control--3">
+                <input
+                  class="form__input--3"
+                  type="text"
+                  name="name"
+                  id="dummy59"
+                  placeholder="name"
+                />
+              </div>
+            </div>
+          </form>
+          <h4>Focus</h4>
+          <p>
+            <small>Select any entry to see the border with focus.</small>
+          </p>
+          <h4>Error</h4>
+          <form class="form--3">
+            <div class="form__group--3">
+              <div class="form__control--3">
+                <input
+                  class="form__input--3 form__input--3-error"
+                  type="email"
+                  id="dummy60"
+                  placeholder="name"
+                  value="supportEmail"
+                  name="email"
+                />
+              </div>
+            </div>
+          </form>
+          <hr />
+          <h4>Select</h4>
+          <form class="form--3">
+            <div class="form__group--3">
+              <div class="form__control--3">
+                <div class="select__group">
+                  <div class="select__icon--3">
+                    <img
+                      src="./images/icon-arrow-down.svg"
+                      alt="select dummy"
+                    />
+                  </div>
+                  <select class="form__select--3" id="dummyselect41">
+                    <option value="" disabled selected hidden>
+                      Choose a drink
+                    </option>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+          <h4>Select Error</h4>
+          <form class="form--3">
+            <div class="form__group--3">
+              <div class="form__control--3">
+                <div class="select__group">
+                  <div class="select__icon--3">
+                    <img
+                      src="./images/icon-arrow-down.svg"
+                      alt="select dummy"
+                    />
+                  </div>
+                  <select
+                    class="form__select--3 form__select--3-error"
+                    id="dummyselect41"
+                  >
+                    <option value="" disabled selected hidden>
+                      Choose a drink
+                    </option>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- END VARIANT 3 -->
+          <br>
+          <hr>
+          <!-- START - OPENED DROPDOWN -->
+          <h4>Opened dropdown</h4>
+          <a href="./modal-form.html">Click to show the dropdown 🧐</a>
+          <!-- END - OPENED DROPDOWN -->
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabItem = document.querySelectorAll(".tab__item");
+        const panelItem = document.querySelectorAll(".panel__item");
+
+        for (const [index, value] of tabItem.entries()) {
+          value.addEventListener("click", () => {
+            let tabItemActive = document.querySelector(".tab__item--active");
+            let panelItemActive = document.querySelector(
+              ".panel__item--active"
+            );
+
+            tabItemActive.classList.remove("tab__item--active");
+            tabItem[index].classList.add("tab__item--active");
+
+            panelItemActive.classList.remove("panel__item--active");
+            panelItem[index].classList.add("panel__item--active");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

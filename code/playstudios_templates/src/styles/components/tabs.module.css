@@ -1,0 +1,73 @@
+.tab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.tab li {
+  cursor: pointer;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tab__item {
+  box-sizing: border-box;
+  border-radius: 0;
+  padding: 0 12px 2px 12px;
+  color: var(--gray);
+}
+
+.tab__item--active {
+  color: var(--optional-3);
+  border-bottom: 2px solid var(--optional-3);
+}
+
+li.tab__item--active {
+  font-weight: 600;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+.panel__item {
+  display: none;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-name: bounceInUp;
+}
+
+.panel__item--active {
+  display: block;
+}
+
+/* 
+* Provitional keyframe, this keyframe is not in the specifications
+*/
+
+@keyframes bounceInUp {
+  from,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

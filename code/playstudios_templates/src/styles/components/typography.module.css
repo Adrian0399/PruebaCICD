@@ -1,0 +1,64 @@
+h1 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+h2 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+h3 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+h4 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 11px;
+  line-height: 14px;
+}
+h5 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 9px;
+  line-height: 14px;
+}
+
+.font--regular {
+  font-weight: 400;
+}
+.font--medium {
+  font-weight: 500;
+}
+.font--semibold {
+  font-weight: 600;
+}
+.font--bold {
+  font-weight: 700;
+}
+
+p {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.p--small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.p--large {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}

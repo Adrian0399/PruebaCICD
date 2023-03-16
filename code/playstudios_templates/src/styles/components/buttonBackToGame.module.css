@@ -1,0 +1,35 @@
+.button-back {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.button-back__arrow {
+  --bg-btn: var(--bg-button-primary);
+  --shadow-icon-btn: 0px 0px 6px rgba(64, 64, 64, 0.25);
+
+  background: var(--bg-btn);
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: var(--shadow-icon-btn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-back__arrow-icon {
+  width: 3px;
+  height: 5px;
+  margin: 0;
+}
+
+.button-back__image {
+  width: 29px;
+  height: 29px;
+  margin-left: -4px;
+}
