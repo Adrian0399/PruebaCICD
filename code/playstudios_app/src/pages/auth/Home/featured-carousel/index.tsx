@@ -57,7 +57,7 @@ export default function FeaturedCarousel({ home }: { home?: boolean | false }) {
       {featured?.featureds &&
         <>
           <Section>
-            <Label variant="H2_SBP" bottom={4} top={11}>Featured</Label>
+            <Label variant="H2_SBP" bottom={4} top={11}>Featureeeeed</Label>
           </Section>
           <PlayCarousel
             elementWidth={219}
