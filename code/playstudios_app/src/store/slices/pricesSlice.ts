@@ -3,42 +3,42 @@
 import { createSlice, PayloadAction, Dispatch } from "@reduxjs/toolkit";
 import axios from "axios";
 
-
+import texture1 from "src/assets/0-4K.svg";
 //create mock data for prices
 const pricesMock = [
   {
     id: 1,
     name: "0 - 4K",
     description: "Price 1 description",
-    image: null,
+    image: texture1,
     url: "https://www.google.com",
   },
   {
     id: 2,
     name: "0 - 4K",
     description: "Price 2 description",
-    image: null,
+    image: texture1,
     url: "https://www.google.com",
   },
   {
     id: 3,
     name: "0 - 4K",
     description: "Price 3 description",
-    image: null,
+    image: texture1,
     url: "https://www.google.com",
   },
   {
     id: 4,
     name: "0 - 4K",
     description: "Price 4 description",
-    image: null,
+    image: texture1,
     url: "https://www.google.com",
   },
   {
     id: 5,
     name: "0 - 4K",
     description: "Price 5 description",
-    image: null,
+    image: texture1,
     url: "https://www.google.com",
   },
 ];
